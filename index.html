@@ -1,0 +1,40 @@
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR NOOB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>KALKULATOR SI PEMULA</h1>
+    <main>
+        <input type="tel" placeholder="0" inputmode="numeric" disabled>
+        <div class="container">
+            <button class="clear-key">C</button>
+            <button class="operator-key" onclick="HapusAwal()">→</button>
+            <button class="operator-key" onclick="tambah_nomer('>')">＞</button>
+            <button class="operator-key" onclick="tambah_nomer('/')">/</button>
+            <button class="number-key" onclick="tambah_nomer('7')">7</button>
+            <button class="number-key" onclick="tambah_nomer('8')">8</button>
+            <button class="number-key" onclick="tambah_nomer('9')">9</button>
+            <button class="operator-key" onclick="tambah_nomer('*')">x</button>
+            <button class="number-key" onclick="tambah_nomer('4')">4</button>
+            <button class="number-key" onclick="tambah_nomer('5')">5</button>
+            <button class="number-key" onclick="tambah_nomer('6')">6</button>
+            <button class="operator-key" onclick="tambah_nomer('-')">-</button>
+            <button class="number-key" onclick="tambah_nomer('1')">1</button>
+            <button class="number-key" onclick="tambah_nomer('2')">2</button>
+            <button class="number-key" onclick="tambah_nomer('3')">3</button>
+            <button class="operator-key" onclick="tambah_nomer('+')">+</button>
+            <span></span>
+            <button class="number-key" onclick="tambah_nomer('0')">0</button>
+            <button class="number-key" onclick="tambah_nomer('.')">.</button>
+            <button class="result-key" onclick="hasil()">=</button>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/kenciww_/">©Copyright KennDev 2024</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

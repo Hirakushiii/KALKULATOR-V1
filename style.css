@@ -1,0 +1,90 @@
+    :root{
+        --shadow : rgba(0,0,0,.5)
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgba(0, 0, 0, .1);
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    h1{
+        text-align: center;
+        font-family: helvetica;
+        padding: 20px 0 10px 0;
+    }
+    main{
+        display: grid;
+        width: 30%;
+        height: 530px;
+        margin: 25px auto;
+        border-radius: 10px;
+        padding-bottom: 25px;
+        box-shadow: 2px 4px 10px var(--shadow), -7px -5px 10px white;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 80px auto;
+        grid-template-areas:
+            "i i i i i"
+            "b b b b b"
+            "b b b b b"
+            "b b b b b"
+            "b b b b b"
+            "b b b b b";
+    }
+    input{
+        grid-area: i;
+        font-size: 40px;
+        text-align: right;
+        margin: 20px 20px 0 20px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        display: grid;
+        grid-area: b;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2px;
+        margin-top: 10px;
+    }
+    .container button{
+        width: 70%;
+        height: 80%;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+        font-family: cursive;
+        transition: 200ms ease-in-out;
+    }
+    .container button:active{
+        margin-top: 1px;
+        transition: 300ms ease-out;
+    }
+    .result-key:active{
+        cursor: wait;
+    }
+    .operator-key,.clear-key,.result-key{
+        color: red;
+    }
+    footer{
+    position: relative;
+    padding-top: 5%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    @media only screen and (max-width: 600px) {
+        main{
+            width: 80%;
+            height: 500px;
+        }
+    }
